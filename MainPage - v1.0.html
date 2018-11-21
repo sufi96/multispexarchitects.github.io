@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="img/MSicon.ico" rel="icon"  />
+  <title>Multi-Spex Architects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- social media css -->
+  
+  <style>  
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+    position:fixed;
+    position:absolute;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+  nav.navbar{
+    position: fixed;
+    width:100%;
+    background-color: #313131;
+    border:none;
+    z-index:3;
+  }
+  
+#centre {         /*toolbar center*/
+  height:47px;
+  width: 150px;
+  display:block;
+  background-color: #313131;
+  
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #313131;
+}
+.bg {                    /*background main page*/
+    /* The image used */
+    background-image: url("img/MS Logo BG.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.fa {             /*social media button*/
+  padding: 5px;
+  font-size: 23px;
+  height:35px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-linkedin {
+  background: white;
+  color: black;
+}
+.fa-facebook {
+  background: white;
+  color: black;
+}
+.social-media{
+  position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+.social-media a {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#about{             /*about space*/
+  height:550px;
+  width:100%;
+  background-color:white;
+  position:absolute;
+  position:relative;
+  z-index: -1;
+  float:left;
+}
+#about-main{
+  position: relative;
+  left:275px;
+  top:150px;
+  height:200px;
+  width: 500px;
+  text-align: center;
+  float:left;
+  border-right: 3px solid;
+}
+#about-info{
+  position:relative;
+  left: 300px;
+  top:70px;
+  height:500px;
+  width: 480px;
+  text-align: left;
+  float:left;
+}
+#about-info pre{
+  background-color:white;
+  border-style:none;
+}
+#work{          /*work space*/
+  height:1050px;
+  width:100%;
+  position: relative;
+  float:left;
+}
+#work-title{
+  color:white;
+  padding-top: 70px;
+  text-align: center;
+  width:100%;
+  font-size: 34px;
+  position:relative;
+/*  float :left;
+*/  z-index:-1;
+}
+#work-title img{
+  position: absolute;
+  float: left;
+  width: 90px;
+  height: 80px;
+  margin-left: -200px;
+  margin-top: -20px;
+  opacity: 0.35;
+  transform: rotate(180deg);
+  }
+#work-undeline{
+  border-bottom: 2px solid white;
+  width:14%;
+  margin-left:665px;
+  margin-top: -5px;
+  /*  position:relative;
+ float:left; */
+}
+
+#work-wrapper{
+  /*position:relative;
+  float:left;*/
+  /*text-align: center;*/  
+}
+#pic-size{
+  width: 271px;
+  height: 204px;
+  overflow: hidden;
+}
+.middle{
+  transition: 1s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(0%, -100%);
+  width: 271px;
+  height: 204px;
+  /*border: 1px solid white;*/
+}
+.pic-text{ 
+  color: white;
+  font-size: 28px;
+  padding:20%;
+  margin-top: 20px;
+}
+.pic-text-underline{
+  border-bottom: 1px solid white;
+  width:90%;
+  margin-left: 15px;
+  margin-top: -53px;
+}
+th:hover .middle{
+  opacity: 1;
+}
+table{
+  /*border-spacing: 10px 12px;*/
+  color:white;
+  margin-top:10px;
+  /*padding: 0 8px 0 8px;*/
+}
+tr{
+  margin-bottom: 0px;
+}
+th{
+  width: 285px;
+  height: 280px;
+  /*padding: 0 15px 0 15px;*/
+  /*border: 1px solid white;*/
+  /*border-spacing: 10px 10px 10px 10px;*/
+  text-align: center; 
+}
+.pic-text a:link{
+  color: white;
+  text-decoration: none;
+}
+.pic-text a:hover{
+  color: white;
+  text-decoration: none;
+}
+.pic-text a:visited{
+  color: white;
+  text-decoration: none;
+}
+.pic-text a:selected{
+  color: white;
+  text-decoration: none;
+}
+#pic-size img{
+  width: 269px;
+  height: 202px;
+  object-fit: cover;
+  backface-visibility: hidden;
+}
+th:hover img{
+  transform: scale(1.1); 
+  transition: transform 1s;
+  opacity:0.5;
+}
+#Team{      /*Team space*/
+  height:935px;
+  width:100%;
+  padding: 0;
+  position: relative;
+  float:left;
+  background-color: #1d1d1d;
+  
+}
+#team-title{
+  color:white;
+  padding-top: 50px;
+  text-align: center;
+  width:100%;
+  font-size: 34px;
+  position:relative;
+  padding-bottom: 50px;
+  
+/*  float :left;
+*/  
+}
+.team-img-slide{
+  position:relative;
+  height:780px;
+  width: 100%;
+}
+/*.team-img-slide:hover{
+  .carousel('pause');
+}*/
+#Ach{
+  height: 750px;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  float: left; 
+}
+#ach-bg{
+  background-image: url("img/ach3-new.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+#ach-title{
+  color:white;
+  padding-top: 90px;
+  text-align: center;
+  width:100%;
+  font-size: 38px;
+  position:relative;
+  padding-bottom: 50px;
+}
+#ach-title img{
+  width: 75px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+#ach-undeline{
+  border-bottom: 2px solid white;
+  width:15%;
+  margin-left:665px;
+  margin-top: 20px;
+  /*  position:relative;
+ float:left; */
+}
+#ach-text{
+  
+}
+#ach-text pre b{
+  letter-spacing: 2px;
+  font-size: 36px;
+}
+#ach-text pre{
+  position: relative;
+  float: left;
+  background: none;
+  color: white;
+  border-style: none;
+  text-align: center;
+  width:38%;
+  padding-top: 20px;
+  margin-left: 300px;
+  /*border: 1px solid white;*/
+}
+#ach-sijil{
+  position: relative;
+  float: left;
+  width: 20%;
+  margin-left: 50px;
+}
+#ach-sijil img{
+  border: 5px solid white;
+  width: 270px;
+  height:400px;
+}
+#Contact{
+  height: 800px;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+#contact-title{
+  color:white;
+  padding-top: 50px;
+  text-align: center;
+  width:100%;
+  font-size: 34px;
+  padding-bottom: 50px;
+}
+#contact-undeline{
+  border-bottom: 2px solid white;
+  width:15%;
+  margin-left:665px;
+  margin-top: 20px;
+  /*  position:relative;
+ float:left; */
+}
+#contact-body {
+  margin-left: 70px;
+  margin-bottom: 50px;
+}
+#contact-body img{
+  position: relative;
+  float: left;
+  width: 1436px;
+  height: 644px;
+}
+#contact-body b{
+  font-size: 24px;
+}
+#contact-KL{
+  padding-top: 60px;
+  padding-left: 40px;
+  position: absolute;
+  float: left;
+  border-style:none;
+  background: none;
+  color: black;
+}
+#contact-KT{
+  margin-top: 50px;
+  padding-left: 340px;
+  position: absolute;
+  float: left;
+  border-style:none;
+  background: none;
+  color: black;
+}
+#googleMap{
+  width:1425px;
+  height:300px; 
+  margin-top:20px; 
+  margin-left: 70px;
+  margin-bottom: 50px; 
+  position: relative;
+  float: left;
+  border-radius: 25px;
+}
+
+#Footer{
+  height: 150px;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  float: left;
+  background-color: #1d1d1d;
+}
+
+@font-face {
+    font-family: Tactic-Sans;
+    src: url(font/tacticsansexd-med.woff);
+}
+@font-face {
+    font-family: Futura-Light;
+    src: url(font/futura-light.woff);
+}
+@font-face {
+    font-family: DIN-Neu-Grotesk;
+    src: url(font/din-30640-std-neuzeit-grotesk-bold-cond.woff);
+}
+@font-face {
+    font-family: DIN-Light;
+    src: url(font/dinlight.woff);
+}
+@font-face {
+    font-family: Futura-Normal;
+    src: url(font/futurand-medium.woff);
+}
+@font-face {
+    font-family: Open-Sans;
+    src: url(font/opensans-regular.woff);
+}
+.Futura-Font {
+  font-family: Futura-Light;
+  font-size:19px;
+  letter-spacing: 3px;
+}
+.Futura-Font-Work {
+  font-family: Futura-Light;
+  font-size:19px;
+  letter-spacing: 1px;
+}
+.Din-Light {
+  font-family: DIN-Light;
+  font-size:19px;
+}
+h1.Din-Grotesk{
+  font-family:DIN-Neu-Grotesk;
+  font-size:68px;
+  font-color:black;
+  text-decoration: none;
+}
+.Futura-Basic{
+  font-family:Futura-Normal;
+  font-size: 34px;
+  letter-spacing: 7px;
+  text-shadow: 4px 4px 4px black;
+}
+.Open-Sans{
+  font-family:Open-Sans;
+  font-size: 34px;
+}
+
+</style>
+</head>
+<body>
+<div class="bg">                    <!-- Main Page + Toolbar -->
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      
+        <li style="width:20%">.</li>
+        <li id="centre" ><a href="#">HOME</a></li>
+        <li  id="centre"><a href="#">ABOUT US</a></li>
+        <li id="centre"class="dropdown ">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role = "button">OUR WORK</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Master Planning</a></li>
+            <li><a href="#">Instituitional</a></li>
+            <li><a href="#">Commercial</a></li>
+            <li><a href="#">Hotel & Resort</a></li>
+            <li><a href="#">Residential</a></li>
+            <li><a href="#">Public Building</a></li>
+            <li><a href="#">Industrial</a></li>
+            <li><a href="#">Interior</a></li>
+            <li><a href="#">Landscape</a></li>
+          </ul>
+        </li>
+        <li id="centre" class="dropdown ">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role = "button">OUR TEAM</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Board of Directors</a></li>
+          </ul>
+        </li>       
+        <li id="centre"><a href="#">AWARD</a></li>
+        <li id="centre"><a href="#">CONTACT</a></li>
+        <li style="text-align:right; width:20%">.</li>
+    </ul>
+  </div>
+</nav>
+  <div class="social-media">
+    <a style="margin:-400px 790px"href="#" class="fa fa-linkedin"></a>
+    <a style="margin:-400px 740px" href="#" class="fa fa-facebook"></a>
+  </div>
+</div>
+
+
+<div id="about"class="container">     <!-- About -->
+  <div id="about-main">
+    <h1 class="Din-Grotesk">MULTI-SPEX</h1>
+    <p class="Futura-Font">ARCHITECTS SDN BHD</p>
+    <p class="Din-Light" ><b>KUALA LUMPUR | TERENGGANU | PENANG</b></p>
+  </div>
+  <div id="about-info">
+    <pre class="Din-Light">
+      Was formed with the ultimate aim of providing a 
+      more comprehensive consultancy services with 
+      great efficiency and conviction. This is achieved 
+      through the combination  of expertise disciplines 
+      which is enhanced by experience acquired both 
+      locally and abroad.
+
+      Our philosophy behind this practice is to create a 
+      direction in the architectural consultancy services
+      which effectively provide option to our clients to
+      make their needs. Commercial considerations are 
+      not neglected and market research is also done to 
+      ensure good returns. Thus, new strategies, new 
+      methods and new answers are formulated. 
+    </pre>
+  </div>
+</div>
+
+<div id="work" class="container">             <!-- Work -->
+  
+    <div id="work-title">
+      <img src="img/whiteflower.png">
+      <p class="Futura-Basic">OUR TOUCH</p>
+      <div id="work-undeline"></div>
+    </div>
+    <div id="work-wrapper" class="Futura-Font-Work">
+      <table align="center">
+        <tr>
+          <th>
+            <div id="pic-size"><img src="img/InSt.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Instituitional</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th>  <!-- Instituitional -->
+          <th>
+            <div id="pic-size" ><img src="img/HR.jpg"></div>
+            <div class="middle">
+              <div class="pic-text" style="white-space: nowrap; margin-left: -10px;">
+                <a href="#">Hotel & Resort</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Hotel & Resort -->
+          <th>
+            <div id="pic-size"><img src="img/Com.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Commercial</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Commercial -->
+        </tr>
+        <tr>
+          <th>
+            <div id="pic-size"><img src="img/Land.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Landscape</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Landscape -->
+          <th>
+            <div id="pic-size"><img src="img/MP.jpg"></div>
+            <div class="middle">
+              <div class="pic-text" style="white-space: nowrap; margin-left: -10px;">
+                <a href="#">Master Planning</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Master Planning -->
+          <th>
+            <div id="pic-size"><img src="img/PB.jpg"></div>
+            <div class="middle">
+              <div class="pic-text" style="white-space: nowrap; margin-left: -10px;">
+                <a href="#">Public Building</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Public Building -->
+        </tr>
+        <tr>
+          <th>
+            <div id="pic-size"><img src="img/InDu.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Industrial</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Industrial -->
+          <th>
+            <div id="pic-size"><img src="img/InTe.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Interior</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th> <!-- Interior -->
+          <th>
+            <div id="pic-size"><img src="img/Res.jpg"></div>
+            <div class="middle">
+              <div class="pic-text">
+                <a href="#">Residential</a>
+              </div>
+              <div class="pic-text-underline"></div>
+            </div>
+          </th>  <!-- Residential -->
+        </tr>
+      </table>
+    </div>
+</div>    <!-- End of Work -->
+
+<div id="Team" class="container">       <!-- Team space -->
+  <div id="team-title">
+      <p class="Futura-Basic">OUR TEAM</p>
+      <div id="work-undeline"></div>
+    </div>
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" style="z-index:2">
+    <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+      </ol>
+    
+     <!-- Wrapper for slides -->
+    <div class="carousel-inner team-img-slide">
+      <div class="item active">
+        <img src="img/slider/img.jpg" alt="Image 1" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img1.jpg" alt="Image 2" style="width: 100%;">
+      </div>
+    
+      <div class="item">
+        <img src="img/slider/img2.jpg" alt="Image 3" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img3.jpg" alt="Image 4" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img4.jpg" alt="Image 5" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img5.jpg" alt="Image 6" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img6.jpg" alt="Image 7" style="width: 100%;">
+      </div>
+
+      <div class="item">
+        <img src="img/slider/img7.jpg" alt="Image 8" style="width: 100%;">
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+</div>      <!-- End of Team -->
+
+<div id="Ach">
+  <div id="ach-bg">
+    <div id="ach-title">
+      <img src="img/whiteDiamond.png">
+      <p class="Futura-Basic">ACHIEVEMENT & AWARD</p>
+      <div id="ach-undeline"></div>
+    </div>
+    <div id="ach-text">
+      <pre class="Open-Sans">
+        <b>THE BEST PROJECT AWARD</b>
+      (Building Project-Medium)
+      ​
+      in
+      ​
+      The Malaysian Construction 
+      Industry Excellence Awards 2015
+      </pre>
+    </div>
+    <div id="ach-sijil">
+      <img src="img/ach-award.jpg">
+    </div>
+  </div>
+</div>    <!-- End of Achievement -->
+
+<div id="Contact">
+  <div id="contact-title">
+    <p class="Futura-Basic">CONTACT US</p>
+    <div id="work-undeline"></div>
+  </div>
+  <div id="contact-body">
+    <img src="img/mail-bg-2.png">
+    <pre id="contact-KL" class="Open-Sans" style="font-size: 19px">
+      <b>KUALA LUMPUR</b>
+      5-1, JLN. 15/48A,
+      SENTUL RAYA BOULEVARD,
+      OFF JLN SENTUL,
+      51000 KUALA LUMPUR
+
+      multispex@msasb.com
+      Tel : 03-4042 3466
+      Fax: 03-4042 3429
+    </pre>
+    <pre id="contact-KT" class="Open-Sans" style="font-size: 19px">
+      <b>TERENGGANU</b>
+      1646,
+      JLN PANJI ALAM,
+      21100 KUALA TERENGGANU,
+      TERENGGANU
+
+      ms.kt@msasb.com
+      Tel : 09-6223 513
+      Fax: 09-6223 513
+    </pre>
+
+    <div class="contact-form">
+      
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" >
+  <script>
+    function myMap() {
+      var myLatLng = new google.maps.LatLng(3.1849293,101.69259220000004);
+      var mapProp= {
+        center:new google.maps.LatLng(3.1849293,101.69259220000004),
+        zoom:15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP, 
+      };
+      var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'MULTI-SPEX ARCHITECTS'
+      });
+    }
+  </script>
+
+  <!-- <script 
+    src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlZ-7-U81-rPTpCIKAY5IGBCiUl2tfLek&callback=myMap'
+    
+    >
+  </script> -->  <!-- Map Google -->
+</div>
+  
+
+
+
+<div id="Footer">
+  
+
+</div>
+
+</body>
+</html>

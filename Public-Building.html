@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="img/MSicon.ico" rel="icon"  />
+  <title>Multi-Spex Architects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- social media css -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap-3.3.7.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src='js/msasb-js.js'> </script>
+  <link rel="stylesheet" type="text/css" href="css/msasb.css">
+
+</head>
+  <body>
+    <div id="home">                    <!-- Main Page + Toolbar -->
+    <nav class="navbar navbar-inverse" >
+      <div class="container-fluid">        
+        <ul class="nav navbar-nav">  
+            <li id="centre" class="cursor"><a onclick="homeButton()">HOME</a></li>
+            <li  id="centre" class="cursor"><a onclick="aboutButton()">ABOUT US</a></li>
+            <li id="centre"class="dropdown ">
+              <a onclick="workButton()" class="dropdown-toggle cursor" role = "button">OUR WORK</a>
+              <ul class="dropdown-menu cursor">
+                <li><a onclick="masterPlanningButton()">Master Planning</a></li>
+                <li><a onclick="instituitionalButton()">Instituitional</a></li>
+                <li><a onclick="commercialButton()">Commercial</a></li>
+                <li><a onclick="hotelResortButton()">Hotel & Resort</a></li>
+                <li><a onclick="residentialButton()">Residential</a></li>
+                <li><a onclick="publicBuildingButton()">Public Building</a></li>
+                <li><a onclick="industrialButton()">Industrial</a></li>
+                <li><a onclick="interiorButton()">Interior</a></li>
+                <li><a onclick="landscapeButton()">Landscape</a></li>
+              </ul>
+            </li>
+            <li id="centre" class="dropdown cursor">
+              <a onclick="teamButton()" class="dropdown-toggle" role = "button">OUR TEAM</a>
+              <ul class="dropdown-menu cursor">
+                <li><a onclick="bODButton()">Board of Directors</a></li>
+              </ul>
+            </li>       
+            <li id="centre" class="cursor"><a onclick="achButton()">AWARD</a></li>
+            <li id="centre" class="cursor"><a onclick="contactButton()">CONTACT</a></li>    
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+<!-- *****************************EDIT BELOW HERE *****************************************-->
+  <div id="Public-Building">
+   <img src="img/Work/PB/1.png">
+   <img src="img/Work/PB/2.png">
+   <img src="img/Work/PB/3.png">
+   <img src="img/Work/PB/4.png">
+   <img src="img/Work/PB/5.png">
+   <img src="img/Work/PB/6.png">
+   <img src="img/Work/PB/7.png">
+  </div>
+  <!-- *****************************END EDIT ************************************************-->
+
+  <div id="Footer">
+    <a onclick="linkedInButton()" style="margin: 50px 790px"  class="fa fa-linkedin"></a>
+    <a onclick="facebookButton()" style="margin: 50px 740px"  class="fa fa-facebook"></a>
+    
+    <p>Proudly present Multi-Spex Architects Sdn Bhd. Copyright © 2018</p> 
+  </div>
+
+  <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+
+</body>
+</html>

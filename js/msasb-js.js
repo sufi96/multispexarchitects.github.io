@@ -192,3 +192,12 @@ function validateForm(){
     location.href = "Board-of-Directors.html";
    }
    // ************************ DROPDOWN MENU BUTTON **********************
+
+   function toolbarSmartphone() {
+    var x = document.getElementById("navbar-mobile");
+    if (x.className === "container-fluid") {
+        x.className += " responsive";
+    } else {
+        x.className = "container-fluid";
+    }
+}

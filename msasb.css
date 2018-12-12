@@ -1350,7 +1350,7 @@ h1.Din-Grotesk{
   position: relative;
   float: left;
   border-radius: 25px;
-  border: 1px solid white;
+  /*border: 1px solid white;*/
 }
 
 } /*END OF MEDIA 600px*/

@@ -1,4 +1,6 @@
 
+  @media only screen and (max-width: 1600px) {
+
   .navbar-nav {
     width: 100%;
     text-align: center;
@@ -421,11 +423,14 @@ th:hover img{
   margin-left: 70px;
   margin-bottom: 50px;
 }
-#contact-body img{
+#contact-bg{
   position: relative;
   float: left;
   width: 1436px;
   height: 644px;
+}
+#contact-bg-responsive{
+  display: none;
 }
 #contact-body b{
   font-size: 24px;
@@ -988,11 +993,16 @@ h1.Din-Grotesk{
     border-radius: 50%;
     z-index: 5;
 }
+}/*END OF MEDIA 1600px*/
 /**************************************RESPONSIVE MOBILE VIEW***************************************/
 .icon{
   display: none;
 }
 @media only screen and (max-width: 600px) {
+
+  body{
+    width: 100%;
+  }
   
  .container-fluid{     /*isi toolbar*/
     display: none;
@@ -1067,7 +1077,7 @@ h1.Din-Grotesk{
   /******END OF FRONT PAGE********/
 
   #about{
-    height: 800px;
+    height: 900px;
   }
   #about-main{
     width: 100%;
@@ -1081,6 +1091,7 @@ h1.Din-Grotesk{
     width: 100%;
     top: 20%;
     left: 0;
+    right:10%;
     margin: 0;
     padding: 0;
   }
@@ -1088,8 +1099,22 @@ h1.Din-Grotesk{
   #work{
     height:1200px;
   }
+  #work-title{
+  color:white;
+  padding-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+  width:100%;
+  font-size: 34px;
+  position:relative;
+/*  float :left;
+*/  z-index:-1;
+}
+  #work-undeline{
+  display: none;
+}
   #work-wrapper th{
-    width: 500px;
+    width: 90%;
     height:100px;
     display:block;  
    /* border: 1px yellow solid;*/
@@ -1108,8 +1133,8 @@ h1.Din-Grotesk{
     height: 100%;
     bottom: 0;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 5%;
+    right: 5%;
     position: absolute;
     padding:0;
     margin:0;
@@ -1132,7 +1157,201 @@ h1.Din-Grotesk{
   #work-wrapper .pic-text-underline {
      display: none;
   }
+  .pic-text a:link{
+    color: white;
+    text-decoration: none;
+  }
+  .pic-text a:hover{
+    color: white;
+    text-decoration: none;
+  }
+  .pic-text a:visited{
+    color: white;
+    text-decoration: none;
+  }
+  .pic-text a:selected{
+    color: white;
+    text-decoration: none;
+  }
 
+  .middle{
+    opacity: 1;
+  }
+  th:hover img{
+    transform: none; 
+    transition: none;
+    opacity:1;
+  }
+  #pic-size img{
+    
+    object-fit: cover;
+    backface-visibility: visible;
+  }
+
+
+/******END OF WORK PAGE********/
+
+#Team{      /*Team space*/
+  height:600px;
+  width:100%;
+  padding: 0;
+  position: relative;
+  float:left;
+  background-color: #1d1d1d;
+  animation: fadein 3s;
+}
+#team-undeline{
+  display: none;
+}
+#team-img-slide{
+  position:relative;
+  height:400px;
+  width: 100%;
+}
+
+/******END OF TEAM PAGE********/
+
+#Ach{
+  height: 1200px;
+  width: 100%;
+  margin-top: 0px;
+  position: relative;
+  float: left;
+  animation: fadein 3s;
+}
+#ach-bg{
+  background-image: url("../img/ach3-new.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  display:table;
+}
+#ach-title{
+  color:white;
+  padding-top: 10%;
+  text-align: center;
+  width:80%;
+  left: 10%;
+  right: 10%;
+  font-size: 38px;
+  position:relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#ach-undeline{
+  display: none;
+}
+#ach-sijil{
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  display: table-header-group;
+}
+#ach-sijil img{
+  border: 5px solid white;
+  width: 100%;
+  height:100%;
+}
+#ach-text{
+  display: table-footer-group;
+}
+#ach-text pre b{
+  letter-spacing: 2px;
+  font-size: 36px;
+}
+#ach-text pre{
+  position: relative;
+  float: left;
+  background: none;
+  color: white;
+  border-style: none;
+  text-align: center;
+  width:100%;
+  padding-top: 10%;
+  margin-left: 0;
+  margin-bottom: 5%;
+  right: 0;
+  /*border: 1px solid white;*/
+}
+/******END OF ACHIEVEMENT PAGE********/
+
+
+#Contact{
+  height: 1200px;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  float: left;
+  animation: fadein 3s;
+}
+#contact-undeline{
+  display: none;
+}
+#contact-bg{
+  display: none;
+}
+#contact-bg-responsive{
+  display: block;
+  position: relative;
+  float: left;
+  width: 100%;
+  left: 0;
+  margin-left: -5%;
+  height: 1200px; 
+}
+#contact-KL{
+  padding-top: 15%;
+  padding-left: 10%;
+  position: absolute;
+  float: left;
+  border-style:none;
+  background: none;
+  color: black;
+}
+#contact-KT{
+  margin-top: 70%;
+  padding-left: 10%;
+  position: absolute;
+  float: left;
+  border-style:none;
+  background: none;
+  color: black;
+}
+#contact-form{
+  position: absolute;
+  float: left;
+  margin-top: 135%;
+  margin-left: 20%;
+  border-radius: 4px;
+  width: 27%;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-left:20%;
+  margin-top: 10px;
+
+}
+/******END OF CONTACT PAGE********/
+
+#googleMap{
+  width:80%;
+  height:20%; 
+  margin-top:40%; 
+  margin-left: 10%;
+  margin-bottom: 0; 
+  position: relative;
+  float: left;
+  border-radius: 25px;
+  /*border: 1px solid white;*/
+}
 
 } /*END OF MEDIA 600px*/
 

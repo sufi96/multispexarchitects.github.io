@@ -35,23 +35,41 @@
 
 body, html {
     height: 100%;
-    margin: 0 ;
+    width: 100%;
+    margin: 0px auto ;
     /*150px footer height*/
     background-color: #313131;
 }
+div.stretchy-wrapper {
+  width: 100%;
+  /*padding-bottom: 56.25%;*/ 
+  position: relative;
+
+  background: #313131;
+}
+
+
+/* Other aspect ratios to try:
+ * 56.25% = 16:9
+ * 75% = 4:3
+ * 66.66% = 3:2
+ * 62.5% = 8:5
+ */
 
 .bg {                    /*background main page*/
     /* The image used */
     background-image: url("../img/MS Logo BG2.jpg");
 
     /* Full height */
-    height: 100%; 
+    height: 100vh; 
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    position: relative;
+    z-index: 1;
+ 
 }
 .bg-logo
 {
@@ -137,11 +155,10 @@ body, html {
   height:550px;
   width:100%;
   background-color:white;
-  position:absolute;
   position:relative;
-  z-index: -1;
   float:left;
   animation: fadein 3s;
+  
 }
 #about-main{
   position: relative;
@@ -181,7 +198,7 @@ body, html {
   font-size: 34px;
   position:relative;
 /*  float :left;
-*/  z-index:-1;
+*/  z-index:1;
 }
 #work-title img{
   position: absolute;
@@ -437,7 +454,7 @@ th:hover img{
 }
 #contact-KL{
   padding-top: 60px;
-  padding-left: 40px;
+  padding-left: 50px;
   position: absolute;
   float: left;
   border-style:none;
@@ -1001,12 +1018,15 @@ h1.Din-Grotesk{
 .icon{
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 445px) {
 
-  body{
+  body. html{
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  div.stretchy-wrapper{
+    width: 445px;
   }
   
  .container-fluid{     /*isi toolbar*/
@@ -1068,7 +1088,6 @@ h1.Din-Grotesk{
   .bg-logo{
     margin-top: 30%;
     margin-left: 27%;
-
   }
   .bg-text{
     width: 100%;
@@ -1105,14 +1124,14 @@ h1.Din-Grotesk{
   #about-info{
     width: 100%;
     top: 10%;
-    left: 0;
+    left: 5%;
     right:0;
-    margin: 0;
+    margin-right: -5%;
     padding: 0;
-    
+    text-align: justify;
   }
    #about-info pre{
-    font-size: 17px; 
+    font-size: 16px; 
     left: 0;
     right:0;
     margin: 0;
@@ -1133,7 +1152,7 @@ h1.Din-Grotesk{
     font-size: 34px;
     position:relative;
   /*  float :left;*/ 
-    z-index:-1;
+    z-index:1;
 }
   #work-undeline{
   display: none;
@@ -1331,39 +1350,53 @@ h1.Din-Grotesk{
   float: left;
   width: 100%;
   left: 0;
-  margin-left: -5%;
+  margin-left: -10%;
   height: 1000px; 
 }
 #contact-KL{
   padding-top: 15%;
-  padding-left: 0;
+  margin-left: -10%;
+  padding-left: 10%;
   position: absolute;
   float: left;
   border-style:none;
   background: none;
   color: black;
+  
 }
 #contact-KT{
   margin-top: 80%;
-  padding-left: 0;
+  padding-left: 10%;
+  margin-left: -10%;
   position: absolute;
   float: left;
   border-style:none;
   background: none;
   color: black;
+  overflow: hidden;
+ 
+}
+#contact-form input[type=text],[type=email],select,textarea{
+  width: 100%;
+ /* padding: 5px;*/
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  /*border: 1px red solid;*/
 }
 #contact-form{
   position: absolute;
   float: left;
   margin-top: 150%;
-  margin-left: 10%;
+  margin-left: 3%;
   border-radius: 4px;
-  width: 27%;
+  width: 60%;
+  /*border: 1px red solid;*/
 }
 .wrapper {
   display: flex;
   justify-content: center;
-  margin-left:10%;
+  margin-left:0%;
   margin-top: 10px;
 
 }
@@ -1371,8 +1404,8 @@ h1.Din-Grotesk{
 #googleMap{
   width:80%;
   height:20%; 
-  margin-top:40%; 
-  margin-left: 12%;
+  margin-top:45%; 
+  margin-left: 10%;
   margin-bottom: 5%; 
   position: relative;
   float: left;
@@ -1406,6 +1439,19 @@ h1.Din-Grotesk{
     bottom: 0;
 }
 
-} /*END OF MEDIA 600px*/
-/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.655676360987!2d101.6904035148214!3d3.1849346538196532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc480f22eff26b%3A0x2393fcf345faa5a3!2sMulti-Spex+Architects+Sdn+Bhd!5e0!3m2!1sen!2smy!4v1545622820631" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-*/
+} /*END OF MEDIA 445px*/
+@media only screen and (max-width: 1920px) {
+
+  body, html{
+    width: 1600px;
+  }
+
+}
+
+@media only screen and (max-width: 2560px) {
+
+  body, html{
+    width: 1600px;
+  }
+
+}

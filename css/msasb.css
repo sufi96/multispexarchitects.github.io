@@ -1441,7 +1441,7 @@ h1.Din-Grotesk{
 }
 
 } /*END OF MEDIA 445px*/
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
 
   body, html{
     width: 1600px;
@@ -1449,7 +1449,7 @@ h1.Din-Grotesk{
 
 }
 
-@media only screen and (max-width: 2560px) {
+@media only screen and (min-width: 2560px) {
 
   body, html{
     width: 1600px;

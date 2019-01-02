@@ -1019,7 +1019,7 @@ h1.Din-Grotesk{
 .icon{
   display: none;
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 418px) {
 
   body. html{
     width: 100%;
@@ -1027,7 +1027,7 @@ h1.Din-Grotesk{
     margin: 0;
   }
   div.stretchy-wrapper{
-    width: 360px;
+    width: 418px;
   }
   
  .container-fluid{     /*isi toolbar*/

@@ -18,15 +18,14 @@
   
 </head>
 <body>
-  
+  <div class="stretchy-wrapper">
     <div class="bg" id="home">                    <!-- Main Page + Toolbar -->
     <nav class="navbar navbar-inverse" >
-      <div class="container-fluid">        
-        <ul class="nav navbar-nav">
-          
-            
+      <div class="container-fluid" id="navbar-mobile">        
+        <ul class="nav navbar-nav" >
+                    
             <li id="centre" ><a href="#home">HOME</a></li>
-            <li  id="centre"><a href="#about">ABOUT US</a></li>
+            <li  id="centre" ><a href="#about">ABOUT US</a></li>
             <li id="centre"class="dropdown ">
               <a href="#work" class="dropdown-toggle" role = "button">OUR WORK</a>
               <ul class="dropdown-menu cursor">
@@ -49,9 +48,12 @@
             </li>       
             <li id="centre"><a href="#Ach">AWARD</a></li>
             <li id="centre"><a href="#Contact">CONTACT</a></li>
-           
         </ul>
+        
       </div>
+      <a href="javascript:void(0);" class="icon" onclick="toolbarSmartphone()">
+          <i class="fa fa-bars"></i>
+      </a>
     </nav>
       <img class="bg-logo" src="img/MS Logo.png">
         
@@ -74,20 +76,20 @@
     </div>
     <div id="about-info">
       <pre class="Din-Light">
-        Was formed with the ultimate aim of providing a 
-        more comprehensive consultancy services with 
-        great efficiency and conviction. This is achieved 
-        through the combination  of expertise disciplines 
-        which is enhanced by experience acquired both 
-        locally and abroad.
+Was formed with the ultimate aim of providing a 
+more comprehensive consultancy services with 
+great efficiency and conviction. This is achieved 
+through the combination  of expertise disciplines 
+which is enhanced by experience acquired both 
+locally and abroad.
 
-        Our philosophy behind this practice is to create a 
-        direction in the architectural consultancy services
-        which effectively provide option to our clients to
-        make their needs. Commercial considerations are 
-        not neglected and market research is also done to 
-        ensure good returns. Thus, new strategies, new 
-        methods and new answers are formulated. 
+Our philosophy behind this practice is to create a 
+direction in the architectural consultancy services
+which effectively provide option to our clients to
+make their needs. Commercial considerations are 
+not neglected and market research is also done to 
+ensure good returns. Thus, new strategies, new 
+methods and new answers are formulated. 
       </pre>
     </div>
   </div>
@@ -103,7 +105,7 @@
         <table align="center">
           <tr>
             <th>
-              <div id="pic-size"><img src="img/InSt.jpg"></div>
+              <div id="pic-size"><a href="Instituitional.html"><img src="img/InSt.jpg"></a></div>
               <div class="middle">
                 <div class="pic-text">
                   <a href="Instituitional.html">Instituitional</a>
@@ -268,13 +270,13 @@
       </div>
       <div id="ach-text">
         <pre class="Open-Sans">
-          <b>THE BEST PROJECT AWARD</b>
-        (Building Project-Medium)
-        ​
-        in
-        ​
-        The Malaysian Construction 
-        Industry Excellence Awards 2015
+  <b>THE BEST PROJECT AWARD</b>
+(Building Project-Medium)
+​
+in
+​
+The Malaysian Construction 
+Industry Excellence Awards 2015
         </pre>
       </div>
       <div id="ach-sijil">
@@ -289,28 +291,29 @@
       <div id="work-undeline"></div>
     </div>
     <div id="contact-body">
-      <img src="img/mail-bg-2.png">
+      <img id="contact-bg" src="img/mail-bg-2.png">
+      <img id="contact-bg-responsive" src="img/mail-border-responsive.png">
       <pre id="contact-KL" class="Open-Sans" style="font-size: 19px">
-        <b>KUALA LUMPUR</b>
-        5-1, JLN. 15/48A,
-        SENTUL RAYA BOULEVARD,
-        OFF JLN SENTUL,
-        51000 KUALA LUMPUR
+<b>KUALA LUMPUR</b>
+5-1, JLN. 15/48A,
+SENTUL RAYA BOULEVARD,
+OFF JLN SENTUL,
+51000 KUALA LUMPUR
 
-        multispex@msasb.com
-        Tel : 03-4042 3466
-        Fax: 03-4042 3429
+multispex@msasb.com
+Tel : 03-4042 3466
+Fax: 03-4042 3429
       </pre>
       <pre id="contact-KT" class="Open-Sans" style="font-size: 19px">
-        <b>TERENGGANU</b>
-        1646,
-        JLN PANJI ALAM,
-        21100 KUALA TERENGGANU,
-        TERENGGANU
+<b>TERENGGANU</b>
+1646,
+JLN PANJI ALAM,
+21100 KUALA TERENGGANU,
+TERENGGANU
 
-        ms.kt@msasb.com
-        Tel : 09-6223 513
-        Fax: 09-6223 513
+ms.kt@msasb.com
+Tel : 09-6223 513
+Fax: 09-6223 513
       </pre>
 
       <div id="contact-form">
@@ -387,9 +390,11 @@
       } 
         // ************************ GOOGLE MAP ******************************
     </script>
-   <!--  <script 
+    <!-- <script 
       src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyAlZ-7-U81-rPTpCIKAY5IGBCiUl2tfLek&callback=myMap'>
+
     </script>  -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.655676360987!2d101.6904035148214!3d3.1849346538196532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc480f22eff26b%3A0x2393fcf345faa5a3!2sMulti-Spex+Architects+Sdn+Bhd!5e0!3m2!1sen!2smy!4v1545622820631" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen></iframe>
   </div>
   
   <div id="Footer">
@@ -404,6 +409,6 @@
   <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-
+</div> <!-- End of Strechy wrapper -->
 </body>
 </html>

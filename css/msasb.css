@@ -824,8 +824,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Master-Planning img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Commercial{
   background-color: #313131;
@@ -836,8 +836,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Commercial img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Hotel-Resort{
   background-color: #313131;
@@ -848,8 +848,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Hotel-Resort img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Instituitional{
   background-color: #313131;
@@ -860,8 +860,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Instituitional img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Landscape{
   background-color: #313131;
@@ -872,8 +872,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Landscape img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Residential{
   background-color: #313131;
@@ -884,8 +884,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Residential img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Interior{
   background-color: #313131;
@@ -896,8 +896,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Interior img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Industrial{
   background-color: #313131;
@@ -908,8 +908,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Industrial img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 #Public-Building{
   background-color: #313131;
@@ -920,8 +920,8 @@ img.hover-shadow {
   animation: fadein 3s;
 }
 #Public-Building img{
-  width: 80%;
-  padding-left: 20%;
+  width: 90%;
+  padding-left: 10%;
 }
 
 #Footer{
@@ -1441,10 +1441,10 @@ h1.Din-Grotesk{
   }
 
 }/*END OF MEDIA 445px*/
-@media only screen and (min-width: 1536px) {
+@media only screen and (min-width: 1536px)and (max-width: 1599px) {
 
   body, html{
-    width: 1600px;
+    width: 1536px;
   }
   .bg-logo{
     margin-top: 15%;
@@ -1455,25 +1455,169 @@ h1.Din-Grotesk{
   .social-media{
     display: none;
   }
- 
-
 }
-@media only screen and (min-width: 1366px) {
+
+@media only screen and (min-width: 1366px) and (max-width: 1535px){
 
   body, html{
-    width: 1600px;
+    width: 100vw;
+    margin: 0;
+  }
+  div.stretchy-wrapper{
+    width: 1366px;
+  }
+  .bg-logo{
+    margin-top: 20%;
+    margin-left: 45%;
+  }
+  .bg-text{
+    padding-top: 0%;
+    padding-left: 35%;
+
+  }
+  .social-media{
+    display: none;
+  }
+   #about-main{
+    padding-left: 0;
+    margin-left: -5%;  
+  }
+  #about-info{
+    left: 25%;
+  }
+   #ach-text{
+    margin-left: -15%;
+  }
+  #work-undeline{
+    margin-left: 45%;
+  }
+  #ach-undeline{
+    margin-left: 45%;
+  }
+  #team-undeline{
+    margin-left: 45%;
+  }
+  
+  #contact-bg{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: 644px;
+  }
+  #contact-form{
+    position: absolute;
+    float: left;
+    margin-top: 300px;
+    margin-left: 55%;
+    border-radius: 4px;
+    width: 27%;
+  }
+
+  #googleMap{
+    width:90%;
+    height:300px; 
+    margin-top:20px; 
+    margin-left: 70px;
+    margin-bottom: 40px; 
+    position: relative;
+    float: left;
+    border-radius: 25px;
+  }
+  #Footer a {
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+  }
+  #bod-row{
+    padding-left: 10%;
+  }
+  #bod-underline{
+    margin-left: 40%;
   }
 
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) and (max-width: 1365px){
 
   body, html{
-    width: 1600px;
+    width: 100vw;
+    margin: 0;
+  }
+  div.stretchy-wrapper{
+      width: 1280px;
+  }
+  .bg-logo{
+    margin-top: 20%;
+    margin-left: 45%;
+  }
+  .bg-text{
+    padding-top: 0%;
+    padding-left: 35%;
+
+  }
+  .social-media{
+    display: none;
+  }
+  
+  #about-main{
+    padding-left: 0;
+    margin-left: -13%;  
+  }
+  #about-info{
+    left: 25%;
+  }
+  #ach-text{
+    margin-left: -10%;
+  }
+  #work-undeline{
+    margin-left: 45%;
+  }
+  #ach-undeline{
+    margin-left: 45%;
+  }
+  #team-undeline{
+    margin-left: 45%;
+  }
+
+  #contact-bg{
+    position: relative;
+    float: left;
+    width: 95%;
+    height: 644px;
+  }
+  #contact-form{
+    position: absolute;
+    float: left;
+    margin-top: 300px;
+    margin-left: 55%;
+    border-radius: 4px;
+    width: 27%;
+  }
+
+  #googleMap{
+    width:90%;
+    height:300px; 
+    margin-top:20px; 
+    margin-left: 70px;
+    margin-bottom: 40px; 
+    position: relative;
+    float: left;
+    border-radius: 25px;
+  }
+  #Footer a {
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+  }
+  #bod-row{
+    padding-left: 7%;
+  }
+  #bod-underline{
+    margin-left: 40%;
   }
 
 }
 
-@media only screen and (min-width: 1920px){
+@media only screen and (min-width: 1920px) {
 
   body, html{
     width: 1600px;

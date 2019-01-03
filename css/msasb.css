@@ -1,6 +1,6 @@
 
-  @media only screen and (max-width: 1600px) {
-
+ /* @media only screen and (min-width: 1600px) {
+*/
   .navbar-nav {
     width: 100%;
     text-align: center;
@@ -1011,7 +1011,7 @@ h1.Din-Grotesk{
     border-radius: 50%;
     z-index: 5;
 }
-}  /*END OF MEDIA 1600px*/
+/*}*/  /*END OF MEDIA 1600px*/
 
 
 /**************************************RESPONSIVE MOBILE VIEW***************************************/
@@ -1019,7 +1019,7 @@ h1.Din-Grotesk{
 .icon{
   display: none;
 }
-@media only screen and (max-width: 418px) {
+@media only screen and (max-width: 420px) and (min-width: 320px){
 
   body. html{
     width: 100%;
@@ -1027,7 +1027,7 @@ h1.Din-Grotesk{
     margin: 0;
   }
   div.stretchy-wrapper{
-    width: 418px;
+    width: 420px;
   }
   
  .container-fluid{     /*isi toolbar*/
@@ -1441,11 +1441,60 @@ h1.Din-Grotesk{
 }
 
 } /*END OF MEDIA 445px*/
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1920px){
 
   body, html{
     width: 1600px;
   }
+  .bg-logo{
+    margin-top: 20%;
+  }
+  .bg-text{
+    padding-top: 5%;
+  }
+  .social-media{
+    padding-top: 35%;
+  }
+  #Team{
+    background-color:  #313131;
+  }
+  #Master-Planning img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Commercial img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Hotel-Resort img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Instituitional img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Landscape img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Residential img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Interior img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Industrial img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Public-Building img{
+    width: 100%;
+    padding-left: 0;
+  }
+
 
 }
 
@@ -1465,6 +1514,42 @@ h1.Din-Grotesk{
   }
   #Team{
     background-color:  #313131;
+  }
+  #Master-Planning img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Commercial img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Hotel-Resort img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Instituitional img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Landscape img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Residential img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Interior img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Industrial img{
+    width: 100%;
+    padding-left: 0;
+  }
+  #Public-Building img{
+    width: 100%;
+    padding-left: 0;
   }
 
 }

@@ -1442,13 +1442,19 @@ h1.Din-Grotesk{
 
   #BoD{
     max-width: 100vw;
-    height: 2100px;
+    height: 2000px;
   }
   #bod-underline{
     display: none;
   }
   #bod-row{
     padding-left: 0%;
+  }
+  #bod-row img:hover{
+    opacity:1;
+  }
+  #bod-row img{
+    pointer-events: none;
   }
 
 }/*END OF MEDIA 445px*/

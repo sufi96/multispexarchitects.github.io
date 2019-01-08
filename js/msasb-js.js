@@ -135,22 +135,22 @@ function validateForm(){
   });
    // ************************ BACK TO TOP **********************
    function homeButton(){
-    location.href = "#home";
+    location.href = "http://multispexarchitects.com/#home";
    }
    function aboutButton(){
-    location.href = "index.html#about";
+    location.href = "http://multispexarchitects.com/#about";
    }
     function workButton(){
-    location.href = "index.html#work";
+    location.href = "http://multispexarchitects.com/#work";
    }
     function teamButton(){
-    location.href = "index.html#team-img-slide";
+    location.href = "http://multispexarchitects.com/#team-img-slide";
    }
     function achButton(){
-    location.href = "index.html#Ach";
+    location.href = "http://multispexarchitects.com/#Ach";
    }
     function contactButton(){
-    location.href = "index.html#Contact";
+    location.href = "http://multispexarchitects.com/#Contact";
    }
    // ************************ TOOLBAR BUTTON **********************
 

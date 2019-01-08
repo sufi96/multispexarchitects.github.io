@@ -135,7 +135,7 @@ function validateForm(){
   });
    // ************************ BACK TO TOP **********************
    function homeButton(){
-    location.href = "index.html#home";
+    location.href = "#home";
    }
    function aboutButton(){
     location.href = "index.html#about";

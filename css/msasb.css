@@ -1440,6 +1440,17 @@ h1.Din-Grotesk{
       bottom: 0;
   }
 
+  #BoD{
+    max-width: 100vw;
+    height: 100%;
+  }
+  #bod-underline{
+    display: none;
+  }
+  #bod-row{
+    padding-left: 10%;
+  }
+
 }/*END OF MEDIA 445px*/
 @media only screen and (min-width: 1536px)and (max-width: 1599px) {
 

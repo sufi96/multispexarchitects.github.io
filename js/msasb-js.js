@@ -162,34 +162,34 @@ function validateForm(){
    }
    // ************************ SOCIAL MEDIA BUTTON **********************
     function masterPlanningButton(){
-    location.href = "Master-Planning.html";
+    location.href = "http://multispexarchitects.com/Master-Planning/";
    }
     function instituitionalButton(){
-    location.href = "Instituitional.html";
+    location.href = "http://multispexarchitects.com/Instituitional/";
    }
     function commercialButton(){
-    location.href = "Commercial.html";
+    location.href = "http://multispexarchitects.com/Commercial/";
    }
     function hotelResortButton(){
-    location.href = "Hotel-Resort.html";
+    location.href = "http://multispexarchitects.com/Hotel-and-Resort/";
    }
     function residentialButton(){
-    location.href = "Residential.html";
+    location.href = "http://multispexarchitects.com/Residential/";
    }
     function publicBuildingButton(){
-    location.href = "Public-Building.html";
+    location.href = "http://multispexarchitects.com/Public-Building/";
    }
     function industrialButton(){
-    location.href = "Industrial.html";
+    location.href = "http://multispexarchitects.com/Industrial/";
    }
     function interiorButton(){
-    location.href = "Interior.html";
+    location.href = "http://multispexarchitects.com/Interior/";
    }
     function landscapeButton(){
-    location.href = "Landscape.html";
+    location.href = "http://multispexarchitects.com/Landscape/";
    }
     function bODButton(){
-    location.href = "Board-of-Directors.html";
+    location.href = "http://multispexarchitects.com/Board-of-Directors/";
    }
    // ************************ DROPDOWN MENU BUTTON **********************
 
